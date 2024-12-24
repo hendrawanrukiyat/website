@@ -1,0 +1,50 @@
+body {
+    background-color: #f0e5e5; /* Warna latar belakang lembut */
+    color: #b30000; /* Warna teks merah gelap */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden; /* Mencegah scrollbar */
+}
+
+.container {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #b30000; /* Warna tombol merah gelap */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #990000; /* Warna tombol saat hover */
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.8;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0; /* Hati memudar saat jatuh */
+    }
+}
